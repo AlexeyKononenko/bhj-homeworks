@@ -1,11 +1,11 @@
 const countdown = function(){
-    const output = document.getElementById('timer');
-    if (output.textContent >= '1'){
-        output.textContent --;
+    let timer = document.getElementById('timer');
+    if (timer.textContent == 0){
+        alert("Вы победили в конкурсе!")
+        clearInterval(timerInterval)
     }
-    else if (output.textContent = '0')
-
-    alert("Вы победили в конкурсе!");
+    else{
+        timer.textContent --;
+    }
 }
-var id = setInterval(countdown, 1000)
-if(output ==0) clearInterval(id);
+const timerInterval = setInterval(countdown, 1000);
