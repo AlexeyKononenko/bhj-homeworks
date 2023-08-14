@@ -4,7 +4,8 @@ const countdown = function(){
         output.textContent --;
     }
     else if (output.textContent = '0')
+
     alert("Вы победили в конкурсе!");
 }
-
-setInterval(countdown, 1000)
+var id = setInterval(countdown, 1000)
+if(output ==0) clearInterval(id);
